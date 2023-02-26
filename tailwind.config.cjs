@@ -1,8 +1,17 @@
+// const { default: plugin } = require('tailwindcss')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Open Sans", "sans-serif"],
+    },
+    extend: {
+      transitionProperty: {
+        width: "width",
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/line-clamp")],
+};
