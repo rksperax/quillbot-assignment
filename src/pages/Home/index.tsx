@@ -56,7 +56,7 @@ function Home() {
           closeSidebar={() => setSidebarOpen(false)}
           userProfiles={{
             avatar: ericHoffman,
-            name: "Eric Hoffman",
+            name: "Eric Hoffmann",
           }}
         />
       </div>
